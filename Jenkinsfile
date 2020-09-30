@@ -15,5 +15,10 @@ pipeline {
               sh "mvn clean install"
             }
         }
+         stage("build code"){
+            steps{
+              sh "mvn clean install"
+            }
+        }
 }
 }
