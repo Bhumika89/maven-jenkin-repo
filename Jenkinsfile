@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage("clone code"){
             steps{
-               git credentialsId: 'git_credentials', url: 'https://github.com/Bhumika89/maven-jenkin-repo.git'
+              // git credentialsId: 'git_credentials', url: 'https://github.com/Bhumika89/maven-jenkin-repo.git'
+                git 'https://github.com/Bhumika89/maven-jenkin-repo'
             }
         }
         stage("build code"){
