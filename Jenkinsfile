@@ -4,7 +4,7 @@ pipeline {
     /*environment {
         PATH = "/C/Users/bsiddalinges/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin:$PATH"
     }*/
-    tool name: 'maven', type: 'maven'
+    
     stages {
         stage("clone code"){
             steps{
