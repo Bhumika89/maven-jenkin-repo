@@ -1,9 +1,10 @@
 
 pipeline {
     agent any
-    environment {
+    /*environment {
         PATH = "/C/Users/bsiddalinges/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin:$PATH"
-    }
+    }*/
+    tool name: 'maven', type: 'maven'
     stages {
         stage("clone code"){
             steps{
@@ -13,7 +14,8 @@ pipeline {
         }
         stage("build code"){
             steps{
-              bat "mvn clean install"
+               def mvnHome= tool name: 'maven', type: 'maven'
+                sh "${ mvnHome}/bin/mvn clean install"
             }
         }
         
