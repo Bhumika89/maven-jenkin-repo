@@ -9,10 +9,11 @@
    
       
    }
-   }
+   
  stage('SonarQube Analysis') {
         def mvnHome =  tool name: 'maven', type: 'maven'
         withSonarQubeEnv('sonar') { 
           bat "${mvnHome}/bin/mvn sonar:sonar"
         }
     }
+}
