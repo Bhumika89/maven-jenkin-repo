@@ -25,7 +25,7 @@ public class WelcomeControllerMockTest {
 	
 		
 	}
-	@Test
+	/*@Test
 	public void welcomeTest2() throws Exception {
                String name="bhumika";
 		mockMvc.perform(get("/hello/{name}")
@@ -34,7 +34,6 @@ public class WelcomeControllerMockTest {
 				.andExpect(content().string(" Welcome" + " " +name ));
 	
 		
-	}
+	}*/
 	
 }
-
