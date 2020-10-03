@@ -13,7 +13,7 @@
  stage('SonarQube Analysis') {
        stage('SonarQube analysis') {
     // requires SonarScanner 2.8+
-    def scannerHome =tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
+    def scannerHome =tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
  
    
     withSonarQubeEnv('sonar') {
