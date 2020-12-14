@@ -1,4 +1,4 @@
-node("slave-pipeline") {
+node("sample_node") {
   
    stage('SCM Checkout'){
   git 'https://github.com/Bhumika89/maven-jenkin-repo'
