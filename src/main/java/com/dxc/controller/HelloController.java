@@ -18,7 +18,7 @@ public String hello()
 @GetMapping("/hello/{name}")
 public String Display(@PathVariable  String name)
 {
-	return" Welcome" + " " +name ;
+	return" Welcome" + " " +name 
 	
 }
 	
