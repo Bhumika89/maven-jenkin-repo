@@ -1,4 +1,4 @@
-node("sample_node") {
+node("master") {
   
    stage('SCM Checkout'){
   git 'https://github.com/Bhumika89/maven-jenkin-repo'
