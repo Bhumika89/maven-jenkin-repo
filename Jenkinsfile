@@ -1,6 +1,6 @@
 
 pipeline {
-    agent master
+    agent any
     /*environment {
         PATH = "/C/Users/bsiddalinges/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin:$PATH"
     }*/
@@ -14,6 +14,7 @@ pipeline {
         }
         stage("build code"){
             steps{
+                 
                  
                def mvnHome= tool name: 'maven', type: 'maven'
                 bat"${mvnHome}/bin/mvn clean install"
