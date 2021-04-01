@@ -14,9 +14,7 @@ pipeline {
         }
         stage("build code"){
             steps{
-                 
-                 
-               def mvnHome= tool name: 'maven', type: 'maven'
+                def mvnHome= tool name: 'maven', type: 'maven'
                 bat"${mvnHome}/bin/mvn clean install"
             }
         }
