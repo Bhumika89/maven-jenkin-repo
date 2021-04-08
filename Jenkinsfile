@@ -1,6 +1,6 @@
 
 pipeline {
-    agent any
+    agent master
     environment {
         PATH = "C:/Users/bsiddalinges/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin:$PATH"
        
